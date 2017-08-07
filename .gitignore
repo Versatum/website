@@ -103,3 +103,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Sass
+.sass-cache/
+*.css.map
