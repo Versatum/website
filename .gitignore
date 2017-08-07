@@ -107,3 +107,11 @@ ENV/
 # Sass
 .sass-cache/
 *.css.map
+
+# Sqlite
+
+*.sqlite3
+
+# media files
+
+media/
