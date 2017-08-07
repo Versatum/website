@@ -70,6 +70,10 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# Secrets files
+secrets.py
+production.py
+
 # pyenv
 .python-version
 
