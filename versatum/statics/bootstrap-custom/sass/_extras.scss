@@ -1,0 +1,118 @@
+
+
+body
+{
+  min-height: 10rem;
+  padding-top: 6rem;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+91,0.9+95 */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 91%, rgba(0,0,0,0.9) 95%, rgba(0,0,0,0.9) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 91%,rgba(0,0,0,0.9) 95%,rgba(0,0,0,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 91%,rgba(0,0,0,0.9) 95%,rgba(0,0,0,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e6000000',GradientType=0 ); /* IE6-9 */
+}
+
+.content {
+    margin: 5rem  0;
+}
+
+
+$color: #cacaca;
+
+p.normal {
+    font-weight: normal;
+}
+
+$pink:  #C70039;
+
+.pink {
+    background-color: $pink;
+}
+
+.wine {
+    background-color:  #900C3F;
+}
+
+.orange {
+    background-color: #FF5733;
+}
+
+.gold {
+     background-color: #FFC300;
+}
+
+.purple {
+    background-color:  #581845;
+}
+
+.yellow {
+    background-color:  #ffff00;
+}
+
+.info {
+    background-color: #005aff;
+}
+
+.success {
+    background-color:  #008000;
+}
+
+.warning {
+    background-color: #ffa500;
+}
+
+.danger {
+    background-color: #ff0000;
+}
+
+footer {
+    left: 0;
+    right: 0;
+    color: $color;
+    bottom: 0;
+    text-align: center;
+    margin-top: -1rem;
+    background-color: #333;
+    padding: 4rem 1rem 2rem 1rem;
+    border-top: 1px solid darken(#333, 25%);
+    h4 {
+        color: lighten($color, 10%);
+        text-transform: uppercase;
+    }
+    a {
+        color: $color;
+        font-weight: lighter;
+
+        &:hover, &active {
+            color: lighten($color, 10%);
+            font-weight: normal;
+        }
+    }
+}
+
+ul.simple {
+    width: 40%;
+    display: block;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+    list-style: none;
+}
+
+.flag {
+    width: 16px;
+    height: 16px;
+    margin: 1px;
+    display: inline-block;
+    background: transparent url("../img/flags.png") no-repeat center;
+
+    &.brazil {
+        background-position: center -15px;
+    }
+
+    &.usa {
+        background-position: center 1px;
+    }
+
+    &.spain {
+        background-position: center -31px;
+    }
+}

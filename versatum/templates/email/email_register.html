@@ -1,0 +1,16 @@
+{% load i18n %}
+
+<html>
+<head>
+    <title> {{ subject }} </title>
+</head>
+<body>
+<h1> {% trans 'Olá' %}, {{ name }} </h1>
+<p> {% trans 'Clique no link abaixo confirmar seu cadastro' %} </p>
+<a href="{{ link }}"> {{ link }} </a>
+<br>
+<p><em> {% blocktrans %} Caso o link não funcione copie e cole o link {% endblocktrans %}  </em><p>
+<hr>
+<p> Versatum Org </p>
+</body>
+</html>

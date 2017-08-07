@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    Versatum - {% trans 'Projetos' %}
+{% endblock %}
+
+{% block outdoor %}
+<section class="jumbotron info">
+    <div class="container">
+        <h1 class="jumbotron-heading"> {% trans 'Projetos' %} </h1>
+        <p class="normal">
+            {% block page-description %}
+            {% blocktrans %} Somos uma organização sem fins lucrativos com o objetivo de criar novas tecnologias para solucionar problemas humanos  {% endblocktrans %}
+            {% endblock page-description %}
+        </p>
+    </div>
+</section>
+{% endblock %}

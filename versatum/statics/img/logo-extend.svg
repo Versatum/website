@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   height="500"
+   width="2200"
+   version="1.1"
+   viewBox="0 0 2200 500"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo-extend.svg"
+   inkscape:export-filename="/home/eduardo/Documentos/Projetos/versatum/versatum.git/versatum/statics/img/logo-extended.png"
+   inkscape:export-xdpi="8.1800003"
+   inkscape:export-ydpi="8.1800003">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="0.31818182"
+     inkscape:cx="1302.8534"
+     inkscape:cy="250"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <g
+     id="g3359"
+     transform="translate(18.728945,0)">
+    <g
+       style="fill-rule:evenodd"
+       transform="matrix(0.78328017,0,0,0.78328017,70.176062,-241.59447)"
+       id="g4376">
+      <path
+         style="fill:#ff0000"
+         inkscape:connector-curvature="0"
+         d="m -25.755,624.59 c 19.42,31.592 52.775,58.911 99.035,74.287 56.747,18.862 147.7,16.559 175.21,-28.782 4.8561,-8.2884 5.0153,-17.357 4.6397,-20.909 -0.18304,-1.7303 -0.60396,-6.1249 -2.7641,-8.3765 -0.16461,-0.17158 -0.24897,-0.36083 -0.43444,-0.50539 l 1.5858,2.1785 c -0.75471,-1.6643 -1.5797,-1.8436 -2.0987,-2.9517 -0.63634,-1.3585 -0.78791,-3.1144 -0.63789,-4.1965 1.6146,-11.645 17.504,-13.379 26.344,-10.835 33.927,9.7637 37.034,54.967 26.01,82.218 -32.617,80.63 -140.6,84.725 -207.9,51.183 -54.86,-27.344 -95.941,-77.138 -118.97,-133.32 z"
+         id="path3553" />
+      <path
+         style="fill:#000080"
+         inkscape:connector-curvature="0"
+         d="m 510.88,629.41 c -19.42,-31.59 -52.77,-58.91 -99.03,-74.29 -56.75,-18.86 -147.7,-16.56 -175.21,28.79 -4.8561,8.2884 -5.0153,17.357 -4.6397,20.909 0.18304,1.7303 0.60395,6.1249 2.7641,8.3765 0.16461,0.17157 0.24897,0.36082 0.43444,0.50539 l -1.5858,-2.1785 c 0.75472,1.6643 1.5797,1.8436 2.0987,2.9516 0.63633,1.3585 0.7879,3.1145 0.63789,4.1965 -1.6146,11.645 -17.504,13.379 -26.344,10.835 -33.927,-9.7636 -37.034,-54.967 -26.01,-82.218 32.617,-80.63 140.6,-84.725 207.9,-51.183 54.86,27.344 95.941,77.138 118.97,133.32 z"
+         id="path3562" />
+      <path
+         style="fill:#008000"
+         inkscape:connector-curvature="0"
+         d="m 246.09,359.89 c -31.592,19.42 -58.911,52.775 -74.287,99.035 -18.862,56.747 -16.559,147.7 28.782,175.21 8.2884,4.8561 17.357,5.0153 20.909,4.6397 1.7303,-0.18304 6.1249,-0.60396 8.3765,-2.7641 0.17158,-0.16461 0.36083,-0.24897 0.50539,-0.43444 l -2.1785,1.5858 c 1.6643,-0.75471 1.8436,-1.5797 2.9517,-2.0987 1.3585,-0.63634 3.1144,-0.78791 4.1965,-0.63789 11.645,1.6146 13.379,17.504 10.835,26.344 -9.7637,33.927 -54.967,37.034 -82.218,26.01 -80.624,-32.63 -84.719,-140.62 -51.18,-207.91 27.35,-54.86 77.14,-95.94 133.32,-118.97 z"
+         id="path4370" />
+      <path
+         style="fill:#ffff00"
+         inkscape:connector-curvature="0"
+         d="m 239.5,895.33 c 31.592,-19.42 58.911,-52.775 74.287,-99.035 18.862,-56.747 16.559,-147.7 -28.782,-175.21 -8.2884,-4.8561 -17.357,-5.0153 -20.909,-4.6397 -1.7303,0.18304 -6.1249,0.60395 -8.3765,2.7641 -0.17157,0.16461 -0.36082,0.24897 -0.50539,0.43444 l 2.1785,-1.5858 c -1.6643,0.75472 -1.8436,1.5797 -2.9516,2.0987 -1.3585,0.63633 -3.1145,0.7879 -4.1965,0.63789 -11.645,-1.6146 -13.379,-17.504 -10.835,-26.344 9.7636,-33.927 54.967,-37.034 82.218,-26.01 80.63,32.617 84.725,140.6 51.183,207.9 -27.344,54.86 -77.138,95.941 -133.32,118.97 z"
+         id="path4372" />
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       xml:space="preserve"
+       x="516.15613"
+       y="361.69434"
+       font-size="75px"
+       line-height="125%"
+       style="font-size:82.36499786px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d"
+       id="text4398"><tspan
+         x="516.15613"
+         y="361.69434"
+         dx="0"
+         font-size="100px"
+         style="font-size:312.5px;font-family:sans-serif;letter-spacing:18.94395065px;fill:#4d4d4d"
+         id="tspan4400">Versatum</tspan></text>
+  </g>
+</svg>
