@@ -1,0 +1,63 @@
+{% extends "blog_base.html" %}
+{% load i18n static %}
+
+{% block content %}
+    <ol class="breadcrumb">
+        <li><a href="{% url 'home:homepage' %}"> Home </a></li>
+        <li class="active"> {% trans 'Articles' %} </li>
+    </ol>
+    {% for article in articles %}
+     <div class="row">
+         <div class="col-lg-12 ">
+             <h2 class="text-center"> {{ article.title }} </h2>
+         </div>
+         <div class="col-lg-7">
+             <p> {% trans  'by' %} <a href="#" data-toggle="modal" data-target="#aboutAuthor-{{ article.author.pk }}"> {{ article.author }}  </a> <p>
+         </div>
+         <div  class="col-lg-5">
+             <p> {{ article.publication_date  }} </p>
+        </div>
+        <div  class="col-lg-12">
+             <p class="lead text-justfy"> {{ article.description }}  </p>
+        </div>
+        <div class="col-lg-4">
+             <img style="width: 100%" class="img-rounded" src="{{ article.cover.url }}" alt="{% trans 'cover' %}"/>
+         </div>
+         <div class="col-lg-8">
+             {{ article.text|safe|truncatechars_html:400 }}
+             <a href="{% url 'blog:article' article.pk %}"> {% trans 'read more' %} </a>
+          </div>
+      </div>
+      <hr>
+      <div class="modal fade" id="aboutAuthor-{{ article.author.pk }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> {{ article.author.user.get_full_name }} </h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="{{ article.author.picture.url }}" style="width: 100%;">
+            </div>
+            <div class="col-lg-8">
+                <p>
+                    {{ article.author.about }}
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    {% empty %}
+        <div class="alert alert-danger">
+            <p> {% trans 'No Articles found' %} : ( </p>
+        </div>
+    {% endfor %}
+
+{% endblock %}

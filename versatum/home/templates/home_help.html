@@ -1,13 +1,18 @@
 {% extends "home_base.html" %}
 {% load i18n static %}
 
+{% block title %}
+    Versatum - {% trans 'Support us' %}
+{% endblock %}
+
+
 {% block outdoor %}
     <section class="jumbotron purple">
       <div class="container">
-        <h1 class="jumbotron-heading"> {% trans "Ajudar" %} </h1>
+        <h1 class="jumbotron-heading"> {% trans "Support us" %} </h1>
         <p class="normal">
             {% block page-description %}
-                {% blocktrans %} Somos uma organização sem fins lucrativos com o objetivo de criar novas tecnologias para solucionar problemas humanos  {% endblocktrans %}
+                {% blocktrans %} We are a non-profit organization with the goal of creating new technologies to solve human problems {% endblocktrans %}
             {% endblock page-description %}
         </p>
       </div>
@@ -16,5 +21,10 @@
 
 
 {% block content %}
+<ol class="breadcrumb">
+    <li><a href="{% url 'home:homepage' %}"> Home </a></li>
+    <li class="active"> {% trans 'Support us' %} </li>
+</ol>
+
 
 {% endblock %}

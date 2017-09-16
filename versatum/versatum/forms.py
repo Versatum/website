@@ -12,8 +12,8 @@ User = get_user_model()
 class UserForm(forms.ModelForm, BaseBootstrapForm):
 
     password2 = forms.CharField(
-        label=_("Confirmar senha"),
-        help_text=_("A senha deve ser igual a primeira"),
+        label=_("Confirm password"),
+        help_text=_("This field should be the same as the first"),
         widget=forms.PasswordInput
     )
 
@@ -26,13 +26,13 @@ class UserForm(forms.ModelForm, BaseBootstrapForm):
             if isinstance(field.widget, (forms.TextInput, forms.Textarea)):
                 if field.required:
                     field.widget.attrs.setdefault(
-                        'placeholder',  _(u'Campo obrigatório'))
+                        'placeholder',  _(u'Required field'))
 
     def clean(self):
         clean = super(UserForm, self).clean()
         if clean.get('password') != clean.get('password2'):
             raise forms.ValidationError(
-                _("A primeira senha deve ser igual a segunda"))
+                _("The \"confirm password\" field should be the same as the first field"))
         return clean
 
     class Meta:
@@ -55,7 +55,7 @@ class LoginForm(forms.Form, BaseBootstrapForm):
             user = authenticate(username=username, password=password)
 
             if not user or (user and not user.is_active):
-                raise forms.ValidationError(_(u"Usuário ou senha inválidos, tente novamente!"))
+                raise forms.ValidationError(_(u"User or password is invalid"))
 
         return self.cleaned_data
 

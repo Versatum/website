@@ -16,8 +16,11 @@ Including another URLconf
 
 import views
 from utils import HandleError
+
+from django.conf import settings
 from django.contrib import admin
 from django.conf.urls import url, include
+from django.conf.urls.i18n import i18n_patterns
 
 handler400 = HandleError(status_code=400)
 handler403 = HandleError(status_code=403)
@@ -25,6 +28,10 @@ handler404 = HandleError(status_code=404)
 handler500 = HandleError(status_code=500)
 
 urlpatterns = [
+    url(r'^(?P<filename>(robots.txt)|(humans.txt))$', views.files, name='home-files'),
+]
+
+urlpatterns += i18n_patterns(
     url(r'^admin/', admin.site.urls),
     url(r'^login/$', views.login, name="login"),
     url(r'^logout/$', views.logout, name='logout'),
@@ -33,4 +40,9 @@ urlpatterns = [
     url(r'^', include("home.urls", namespace="home")),
     url(r'^project/', include("project.urls", namespace="project")),
     url(r'^blog/', include("blog.urls", namespace="blog")),
-]
+)
+
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

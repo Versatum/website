@@ -17,5 +17,6 @@ import views as blog
 from django.conf.urls import url
 
 urlpatterns = [
-    url(r'^$', blog.posts, name="posts"),
+    url(r'^$', blog.articles, name="articles"),
+    url(r'^(\d+)/$', blog.article, name="article"),
 ]

@@ -1,16 +1,32 @@
 # coding: UTF-8
 
 
+import os
+
 from django import forms
 from django.conf import settings
 from django.forms.utils import ErrorList
 from django.core.mail import EmailMessage
+from django.utils.safestring import mark_safe
+from django.utils.html import conditional_escape
 from django.template.loader import get_template
+from django.utils.crypto import get_random_string
 from django.utils.translation import ugettext_lazy as _
 from django.shortcuts import RequestContext, render_to_response
 
-from django.utils.safestring import mark_safe
-from django.utils.html import conditional_escape
+
+
+CHARS_ALLOWED = r'1234567890ABCDEFGHIJKLMNOPQRSTUVXWYZabcdefghijklmnopqrstuvxwyz'
+
+
+def rename_image(instance, filename):
+    return os.path.join(
+        str(instance.__class__.__name__).lower(),
+        '{0}.{1}'.format(
+            get_random_string(length=16, allowed_chars=CHARS_ALLOWED),
+            filename.split('.')[-1],
+        )
+    )
 
 
 def enviar_email_html(para, assunto, template, dados, request,
@@ -34,23 +50,23 @@ class HandleError(object):
     info = {
         400: {
             'status': 400,
-            'titulo': _(u'Requisição inválida'),
-            'mensagem': _(u"Ops! A página requisitada é inválida..."),
+            'titulo': _(u'Invalid requisition'),
+            'mensagem': _(u"Ops! The requested page is invalid..."),
         },
         403: {
             'status': 403,
-            'titulo': _(u'Requisição proibida'),
-            'mensagem': _(u'Ops! A página requisitada não está autorizada...'),
+            'titulo': _(u'Denied page'),
+            'mensagem': _(u'Ops! Denied page access...'),
         },
         404: {
             'status': 404,
-            'titulo': _(u'Página não encontrado'),
-            'mensagem': _(u"Ops! A página solicitada não foi encontrada..."),
+            'titulo': _(u'Page not found'),
+            'mensagem': _(u"Ops! The page requested is not found..."),
         },
         500: {
             'status': 500,
-            'titulo': _(u'Erro interno do servidor'),
-            'mensagem': _(u'Ops! Ocorreu um erro interno, tente mais tarde... '),
+            'titulo': _(u'Internal error'),
+            'mensagem': _(u'Ops!An internal error occurred... '),
         }
     }
 
@@ -112,7 +128,7 @@ class BaseBootstrapForm(forms.BaseForm):
 
                 if field.required:
                     field.widget.attrs.setdefault(
-                        'placeholder',  _(u'Campo obrigatório'))
+                        'placeholder',  _(u'Required field'))
 
     def __unicode__(self):
         return self.as_div()

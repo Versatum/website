@@ -1,6 +1,47 @@
 {% extends 'project_base.html' %}
+{% load i18n static %}
 
 
 {% block content %}
+<ol class="breadcrumb">
+    <li><a href="{% url 'home:homepage' %}"> Home </a></li>
+    <li class="active"> {% trans 'Projects' %} </li>
+</ol>
+{% for project in projects %}
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">  {{ project.name }} </h2>
+              </div>
+              <div class="panel-body">
+                  <article>
+                      {{ project.description }}
+                      <h5> {% trans 'Info' %} </h5>
+                      {{ project.information }}
+                </article>
+              </div>
+            </div>
+        </div>
+        <div class=" col-lg-4">
+            <figure>
+                <img class="img-rounded" style="width: 100%" src="{{ project.logo.url  }}" alt="{% trans 'Cover' %}"/>
+            </figure>
+            <h4> {% trans 'Maintainers' %} </h4>
+            <ul class="list-group">
+                {% for maintainer in project.maintainers.all %}
+                    <li class="list-group-item">
+                        {{ maintainer.get_full_name }} <br>
+                        <a href="mailto:{{ maintainer.email }}">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            {{ maintainer.email }}
+                         </a>
+                    </li>
+              {% endfor %}
+            </ul>
+         </div>
+    </div>
+    <hr>
+{% endfor %}
 
 {% endblock %}

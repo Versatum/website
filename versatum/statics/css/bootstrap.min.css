@@ -8875,23 +8875,37 @@ footer {
   padding: 4rem 1rem 2rem 1rem;
   border-top: 1px solid black;
 }
-/* line 77, ../sass/_extras.scss */
+/* line 78, ../sass/_extras.scss */
+footer hr {
+  border: 0;
+  padding: 0;
+  height: 1px;
+  display: block;
+  margin: 1em 0;
+  border-top: 1px solid #cacaca;
+}
+/* line 87, ../sass/_extras.scss */
 footer h4 {
   color: #e4e4e4;
   text-transform: uppercase;
 }
-/* line 81, ../sass/_extras.scss */
+/* line 92, ../sass/_extras.scss */
 footer a {
   color: #cacaca;
   font-weight: lighter;
 }
-/* line 85, ../sass/_extras.scss */
-footer a:hover, footer aactive {
+/* line 96, ../sass/_extras.scss */
+footer a:hover, footer a:active {
   color: #e4e4e4;
   font-weight: normal;
 }
+/* line 101, ../sass/_extras.scss */
+footer a:visited {
+  color: #cacaca;
+  font-weight: normal;
+}
 
-/* line 92, ../sass/_extras.scss */
+/* line 108, ../sass/_extras.scss */
 ul.simple {
   width: 40%;
   display: block;
@@ -8900,7 +8914,7 @@ ul.simple {
   list-style: none;
 }
 
-/* line 100, ../sass/_extras.scss */
+/* line 116, ../sass/_extras.scss */
 .flag {
   width: 16px;
   height: 16px;
@@ -8908,15 +8922,15 @@ ul.simple {
   display: inline-block;
   background: transparent url("../img/flags.png") no-repeat center;
 }
-/* line 107, ../sass/_extras.scss */
+/* line 123, ../sass/_extras.scss */
 .flag.brazil {
   background-position: center -15px;
 }
-/* line 111, ../sass/_extras.scss */
+/* line 127, ../sass/_extras.scss */
 .flag.usa {
   background-position: center 1px;
 }
-/* line 115, ../sass/_extras.scss */
+/* line 131, ../sass/_extras.scss */
 .flag.spain {
   background-position: center -31px;
 }

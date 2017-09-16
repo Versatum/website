@@ -1,0 +1,301 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-16 12:51-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: blog/models.py:13
+msgid "User"
+msgstr ""
+
+#: blog/models.py:19 home/templates/home_about.html:5
+#: home/templates/home_about.html:12
+msgid "About"
+msgstr ""
+
+#: blog/models.py:28 project/models.py:15
+msgid "Name"
+msgstr ""
+
+#: blog/models.py:32 blog/models.py:46
+msgid "Description"
+msgstr ""
+
+#: blog/models.py:39
+msgid "Title"
+msgstr ""
+
+#: blog/models.py:49
+msgid "Text"
+msgstr ""
+
+#: blog/models.py:53
+msgid "Tags"
+msgstr ""
+
+#: blog/models.py:56
+msgid "Publication date"
+msgstr ""
+
+#: blog/models.py:59 project/models.py:37
+msgid "Created"
+msgstr ""
+
+#: blog/models.py:63
+msgid "Modified"
+msgstr ""
+
+#: blog/models.py:77
+msgid "Article"
+msgstr ""
+
+#: blog/models.py:83
+msgid "Label"
+msgstr ""
+
+#: blog/templates/blog_base.html:6 templates/base.html:97
+msgid "Blog"
+msgstr ""
+
+#: blog/templates/blog_base.html:13 blog/templates/blog_home.html:7
+msgid "Contatos"
+msgstr ""
+
+#: blog/templates/blog_base.html:16 blog/templates/blog_home.html:10
+#: home/templates/home_about.html:15 home/templates/home_contacts.html:14
+#: home/templates/home_help.html:15 templates/base.html:85
+msgid ""
+" We are a non-profit organization with the goal of creating new technologies "
+"to solve human problems "
+msgstr ""
+
+#: home/templates/home_base.html:5
+msgid "Home"
+msgstr ""
+
+#: home/templates/home_contacts.html:5 home/templates/home_contacts.html:11
+#: templates/base.html:101
+msgid "Contacts"
+msgstr ""
+
+#: home/templates/home_help.html:5 home/templates/home_help.html:12
+#: templates/base.html:99 templates/base.html:117
+msgid "Support us"
+msgstr ""
+
+#: project/models.py:22
+msgid "Descrption"
+msgstr ""
+
+#: project/models.py:26
+msgid "Info"
+msgstr ""
+
+#: project/models.py:31
+msgid "Maintainers"
+msgstr ""
+
+#: project/templates/project_base.html:5 project/templates/project_base.html:11
+#: templates/base.html:100
+msgid "Projects"
+msgstr ""
+
+#: project/templates/project_base.html:14
+msgid ""
+" Somos uma organização sem fins lucrativos com o objetivo de criar novas "
+"tecnologias para solucionar problemas humanos  "
+msgstr ""
+
+#: templates/base.html:44
+msgid "Menu"
+msgstr ""
+
+#: templates/base.html:49
+msgid "Início"
+msgstr ""
+
+#: templates/base.html:59
+msgid "Hello,"
+msgstr ""
+
+#: templates/base.html:62
+msgid "Logout"
+msgstr ""
+
+#: templates/base.html:66 templates/login.html:5 templates/login.html:11
+#: templates/register.html:5
+msgid "Login"
+msgstr ""
+
+#: templates/base.html:69 templates/register.html:11
+msgid "Register"
+msgstr ""
+
+#: templates/base.html:98
+msgid "About us"
+msgstr ""
+
+#: templates/base.html:119
+msgid "Donations"
+msgstr ""
+
+#: templates/base.html:120
+msgid "Disclose our page"
+msgstr ""
+
+#: templates/base.html:121
+msgid "Help out"
+msgstr ""
+
+#: templates/base.html:122
+msgid "Development"
+msgstr ""
+
+#: templates/base.html:124
+msgid "Contact us"
+msgstr ""
+
+#: templates/base.html:128
+msgid "E-mail"
+msgstr ""
+
+#: templates/base.html:136
+msgid "Sociais Networks"
+msgstr ""
+
+#: templates/base.html:144
+msgid "Languages"
+msgstr ""
+
+#: templates/base.html:146 versatum/settings.py:115
+msgid "Portuguese"
+msgstr ""
+
+#: templates/base.html:147 versatum/settings.py:116
+msgid "Spanish"
+msgstr ""
+
+#: templates/base.html:148 versatum/settings.py:117
+msgid "English"
+msgstr ""
+
+#: templates/base.html:155
+msgid "All right reserved"
+msgstr ""
+
+#: templates/email/email_register.html:8
+msgid "Olá"
+msgstr ""
+
+#: templates/email/email_register.html:9
+msgid "Clique no link abaixo confirmar seu cadastro"
+msgstr ""
+
+#: templates/email/email_register.html:12
+msgid " Caso o link não funcione copie e cole o link "
+msgstr ""
+
+#: templates/error.html:14
+msgid "Erro"
+msgstr ""
+
+#: templates/login.html:14 templates/register.html:14
+msgid ""
+" We are a non-profit organization with the goal of creating new technologies "
+"to solve human problems  "
+msgstr ""
+
+#: templates/login.html:29
+msgid "You already logged in"
+msgstr ""
+
+#: templates/login.html:35 templates/register.html:39
+msgid "Send"
+msgstr ""
+
+#: templates/register.html:29
+msgid "  Your information was saved! "
+msgstr ""
+
+#: templates/register.html:31
+msgid " We send a e-mail to you confirm then "
+msgstr ""
+
+#: templates/register.html:32
+msgid " Back to Home "
+msgstr ""
+
+#: utils.py:49
+msgid "Requisição inválida"
+msgstr ""
+
+#: utils.py:50
+msgid "Ops! A página requisitada é inválida..."
+msgstr ""
+
+#: utils.py:54
+msgid "Requisição proibida"
+msgstr ""
+
+#: utils.py:55
+msgid "Ops! A página requisitada não está autorizada..."
+msgstr ""
+
+#: utils.py:59
+msgid "Página não encontrado"
+msgstr ""
+
+#: utils.py:60
+msgid "Ops! A página solicitada não foi encontrada..."
+msgstr ""
+
+#: utils.py:64
+msgid "Erro interno do servidor"
+msgstr ""
+
+#: utils.py:65
+msgid "Ops! Ocorreu um erro interno, tente mais tarde... "
+msgstr ""
+
+#: utils.py:127 versatum/forms.py:29
+msgid "Campo obrigatório"
+msgstr ""
+
+#: utils.py:148
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: versatum/forms.py:15
+msgid "Confirmar senha"
+msgstr ""
+
+#: versatum/forms.py:16
+msgid "A senha deve ser igual a primeira"
+msgstr ""
+
+#: versatum/forms.py:35
+msgid "A primeira senha deve ser igual a segunda"
+msgstr ""
+
+#: versatum/forms.py:58
+msgid "Usuário ou senha inválidos, tente novamente!"
+msgstr ""
+
+#: versatum/views.py:49
+msgid "Versatum - Confirm your email"
+msgstr ""

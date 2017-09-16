@@ -11,7 +11,7 @@
         <h1 class="jumbotron-heading">{% trans 'Login' %}</h1>
         <p class="normal">
             {% block page-description %}
-            {% blocktrans %} Somos uma organização sem fins lucrativos com o objetivo de criar novas tecnologias para solucionar problemas humanos  {% endblocktrans %}
+            {% blocktrans %} We are a non-profit organization with the goal of creating new technologies to solve human problems  {% endblocktrans %}
             {% endblock page-description %}
         </p>
     </div>
@@ -22,17 +22,22 @@
 {% block main %}
     <main  class="content">
         <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="{% url 'home:homepage' %}"> Home </a></li>
+                <li class="active"> {% trans 'Login' %} </li>
+            </ol>
+
             <div class="row">
                 <div class="col-sm-12 col-md-6  col-md-offset-3">
                     {% if request.user.is_authenticated %}
                         <div class="alert alert-success">
-                            <p> Você já está logado! </p>
+                            <p> {% trans 'You already logged in' %} </p>
                         </div>
                     {% else %}
                     <form class="well" action="?next={{ request.path }}" method="POST">
                         {% csrf_token %}
                         {{ form }}
-                        <button type="submit" class="btn btn-primary btn-block"> {% trans 'Enviar' %}  </button>
+                        <button type="submit" class="btn btn-primary btn-block"> {% trans 'Send' %}  </button>
                     </form>
                     {% endif %}
                 </div>

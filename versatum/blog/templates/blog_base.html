@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+
+{% block title %}
+    Versatum - {% trans 'Blog' %}
+{% endblock %}
+
+
+{% block outdoor %}
+    <section class="jumbotron wine">
+      <div class="container">
+        <h1 class="jumbotron-heading"> {% trans "Blog" %}  </h1>
+        <p class="normal">
+            {% block page-description %}
+                {% blocktrans %} We are a non-profit organization with the goal of creating new technologies to solve human problems {% endblocktrans %}
+            {% endblock page-description %}
+        </p>
+      </div>
+    </section>
+{% endblock outdoor %}

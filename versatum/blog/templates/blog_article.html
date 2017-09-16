@@ -1,0 +1,61 @@
+{% extends "blog_base.html" %}
+{% load i18n static %}
+
+{% block content %}
+    <ol class="breadcrumb">
+        <li><a href="{% url 'home:homepage' %}"> Home </a></li>
+        <li><a href="{% url 'blog:articles' %}"> {% trans 'Articles' %} </a></li>
+        <li class="active"> {{ article.title }} </li>
+    </ol>
+     <div class="row">
+         <div class="col-lg-12 ">
+             <h2 class="text-center"> {{ article.title }} </h2>
+             <br style="margin: 2rem 0;">
+         </div>
+         <br>
+         <div  class="col-lg-offset-8 col-lg-4">
+         <p> {{ article.publication_date  }} </p>
+        </div>
+        <br>
+        <div  class="col-lg-12">
+             <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object" src="{{ article.author.picture.url }}" width="90" alt="{{ article.author.name }}">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"> {% trans  'by' %} {{ article.author }} </h4>
+                    {{ article.author.about|truncatechars_html:140 }}
+              </div>
+            </div>
+            </div>
+             <img style="width: 100%;margin: 2rem 0;" class="img-rounded" src="{{ article.cover.url }}" alt="{% trans 'cover' %}"/>
+             <hr>
+             <div>
+                 <p class="lead text-justfy"> {{ article.description }}  </p>
+             </div>
+             <article>
+                 {{ article.text|safe }}
+             </article>
+              <hr>
+              <p> {% trans 'Tags' %}:
+                  {% for tag in article.tags.all %}
+                      <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="{{ tag.description }}">
+                         {{ tag }}
+                         <i class="fa fa-tags" aria-hidden="true"></i>
+                     </a>
+                  {% endfor %}
+              </p>
+          </div>
+      </div>
+{% endblock %}
+
+{% block js-script %}
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+{% endblock %}

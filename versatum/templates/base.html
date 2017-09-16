@@ -1,5 +1,6 @@
 {% load i18n static %}
-<html lang="pt-br">
+
+<html lang="{{ get_current_language  }}">
 <head>
     <meta charset="utf-8"></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,12 +27,13 @@
 
     <!-- ===================== Font ============================ -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{% static 'font/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet">
     <!-- ===================================================== -->
     <title> {% block title %} Versatum - {{ title }} {% endblock title %} </title>
 
     {% block head %}
     {% endblock head %}
+
 </head>
 <body>
     {% block nav  %}
@@ -44,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span classs="icon-bar"></span>
                 </button>
-                <a title="{% trans 'Início' %}"  class="navbar-brand" href="{% url 'home:homepage' %}">
+                <a style="padding:0;"  title="{% trans 'Início' %}"  class="navbar-brand" href="{% url 'home:homepage' %}">
                     <img src="{% static "img/logo-extended.png" %}" alt="Versatum" />
                 </a>
             </div>
@@ -54,17 +56,17 @@
                     </li>
                     {% if request.user.is_authenticated %}
                         <li class="nav-item">
-                            <p class="navbar-text">{% trans "Olá" %}, {{ request.user.first_name }}</p>
+                            <p class="navbar-text">{% trans "Hello" %}, {{ request.user.first_name }}</p>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'logout' %}?next={{ request.path }}">{% trans 'Logout' %}</a>
+                            <a class="nav-link" href="{% url 'logout' %}?next={{ request.path }}"> <i class="fa fa-user-times"> </i> {% trans 'Logout' %}</a>
                         </li>
                     {% else %}
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'login' %}"> <i class="fa fa-user"> </i> {% trans 'Login' %} </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'register' %}"> <i class="fa fa-address-card"> </i> {% trans 'Cadastrar-se' %}</a>
+                            <a class="nav-link" href="{% url 'register' %}">  {% trans 'Register' %}</a>
                         </li>
                     {% endif %}
                 </ul>
@@ -80,7 +82,7 @@
         <h1 class="jumbotron-heading">{% block page-title %} Versatum {% endblock page-title %} </h1>
         <p class="normal">
             {% block page-description %}
-            {% blocktrans %} Somos uma organização sem fins lucrativos com o objetivo de criar novas tecnologias para solucionar problemas humanos  {% endblocktrans %}
+                {% blocktrans %} We are a non-profit organization with the goal of creating new technologies to solve human problems {% endblocktrans %}
             {% endblock page-description %}
         </p>
     </div>
@@ -90,16 +92,16 @@
 <main class="content">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-xs-12 col-md-3">
+            <div class="col-sm-12 col-md-3 col-lg-2">
                 <ul class="nav nav-pills nav-stacked">
-                    <li  role="presentation" ><a href="{% url 'blog:posts' %}"> {% trans 'Blog' %} </a></li>
-                    <li  role="presentation" ><a href="{% url 'home:about' %}"> {% trans 'Sobre' %} </a></li>
-                    <li  role="presentation" ><a href="{% url 'home:help' %}"> {% trans 'Ajudar' %} </a></li>
-                    <li  role="presentation" ><a href="{% url 'project:home' %}"> {% trans 'Projetos' %} </a></li>
-                    <li  role="presentation" ><a href="{% url 'home:contacts' %}"> {% trans 'Contatos' %} </a></li>
+                    <li  role="presentation" ><a href="{% url 'blog:articles' %}"> {% trans 'Blog' %} </a></li>
+                    <li  role="presentation" ><a href="{% url 'home:about' %}"> {% trans 'About us' %} </a></li>
+                    <li  role="presentation" ><a href="{% url 'home:help' %}"> {% trans 'Support us' %} </a></li>
+                    <li  role="presentation" ><a href="{% url 'project:home' %}"> {% trans 'Projects' %} </a></li>
+                    <li  role="presentation" ><a href="{% url 'home:contacts' %}"> {% trans 'Contacts' %} </a></li>
                 </ul>
             </div>
-            <div class="col-sm-12 col-xs-12 col-md-9">
+            <div class="col-sm-12 col-md-9 col-lg-10 ">
                 {% block content %}
                 {% endblock content  %}
             </div>
@@ -112,44 +114,44 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6">
-                <h4> {% trans 'Quero ajudar' %} </h4>
+                <h4> {% trans 'Support us' %} </h4>
                 <ul class="simple">
-                    <li><a href="{% url 'home:help' %}#donations"> <i class="fa fa-link"> </i> {% trans 'Doações' %} </a></li>
-                    <li><a href="{% url 'home:help' %}#comu"> <i class="fa fa-link"> </i> {% trans 'Divulgação' %} </a></li>
-                    <li><a href="{% url 'home:help' %}#services"> <i class="fa fa-link"> </i> {% trans 'Serviço básicos' %} </a></li>
-                    <li><a href="{% url 'home:help' %}#dev"> <i class="fa fa-link"> </i> {% trans 'Desenvolvimento' %} </a></li>
+                    <li><a href="{% url 'home:help' %}#helpout"> <i class="fa fa-link"> </i> {% trans 'Help out' %} </a></li>
+                    <li><a href="{% url 'home:help' %}#donations"> <i class="fa fa-link"> </i> {% trans 'Donations' %} </a></li>
+                    <li><a href="{% url 'home:help' %}#dev"> <i class="fa fa-link"> </i> {% trans 'Development' %} </a></li>
+                    <li><a href="{% url 'home:help' %}#disclose"> <i class="fa fa-link"> </i> {% trans 'Disclose our page' %} </a></li>
                 </ul>
-                <h4> {% trans 'Atendimento' %} </h4>
+                <h4> {% trans 'Contact us' %} </h4>
                 <ul class="simple">
                     <li>
                         <i class="fa fa-envelope"> </i>
-                        {% trans 'Pelo email' %}
-                        <a href="mailto:atendimento@versatum.org">
-                            atendimento@versatum.org
+                        {% trans 'E-mail' %}
+                        <a href="mailto:contact@versatum.org">
+                            contact@versatum.org
                          </a>
                     </li>
                 </ul>
             </div>
             <div class="col-sm-12 col-md-6">
-                <h4> {% trans 'Redes Sociais' %} </h4>
+                <h4> {% trans 'Sociais Networks' %} </h4>
                 <ul class="simple">
                     <li><a href="#"> <i class="fa fa-facebook-square"> </i> Facebook </a></li>
                     <li><a href="#"> <i class="fa fa-twitter-square"> </i> Twitter </a></li>
-                    <li><a href="#"> <i class="fa fa-instagram"> </i> Instagram </a></li>
                     <li><a href="#"> <i class="fa fa-youtube-square"> </i> Youtube </a></li>
                     <li><a href="{{ github }}"> <i class="fa fa-github"> </i> Github </a></li>
                 </ul>
-                <h4> {% trans 'Idiomas' %} </h4>
+                <h4> {% trans 'Languages' %} </h4>
                 <ul class="simple">
-                    <li><a href="#"> <span class="flag brazil"> </span> {% trans 'Português' %} </a></li>
-                    <li><a href="#"> <span class="flag spain"> </span> {% trans 'Espanhol' %} </a></li>
-                    <li><a href="#"> <span class="flag usa"> </span> {% trans 'Inglês' %} </a></li>
+                    <li><a href="#"> <span class="flag brazil"> </span> {% trans 'Portuguese' %} </a></li>
+                    <li><a href="#"> <span class="flag spain"> </span> {% trans 'Spanish' %} </a></li>
+                    <li><a href="#"> <span class="flag usa"> </span> {% trans 'English' %} </a></li>
                 </ul>
             </div>
             <div class="col-sm-12">
+                <hr>
                 <address>
-                    <strong>Versatum Org</strong>
-                    <p> Todos os direitos reservados ®</p>
+                    <strong> Versatum Org </strong>
+                    <p> {% trans 'All right reserved' %}® </p>
                 </address>
             </div>
         </div>
@@ -175,9 +177,12 @@
                 $this.parent().addClass('active');
             }
         });
-        //window.location.href
     });
 </script>
+
+{% block js-script %}
+
+{% endblock js-script %}
 
 </body>
 </html>

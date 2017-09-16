@@ -74,16 +74,32 @@ footer {
     background-color: #333;
     padding: 4rem 1rem 2rem 1rem;
     border-top: 1px solid darken(#333, 25%);
+
+    hr {
+        border: 0;
+        padding: 0;
+        height: 1px;
+        display: block;
+        margin: 1em 0;
+        border-top: 1px solid $color;
+    }
+
     h4 {
         color: lighten($color, 10%);
         text-transform: uppercase;
     }
+
     a {
         color: $color;
         font-weight: lighter;
 
-        &:hover, &active {
+        &:hover, &:active {
             color: lighten($color, 10%);
+            font-weight: normal;
+        }
+
+        &:visited {
+            color: $color;
             font-weight: normal;
         }
     }

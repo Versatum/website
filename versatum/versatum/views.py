@@ -12,6 +12,11 @@ from django.contrib.auth import logout as make_logout
 from django.shortcuts import HttpResponseRedirect, render, get_object_or_404
 
 
+
+def files(request, filename):
+    return render(request, filename)
+
+
 def login(request):
     form = LoginForm()
     if request.method == 'POST':
@@ -41,7 +46,7 @@ def confirm(self, string):
     return HttpResponseRedirect(reverse("home:homepage"))
 
 
-ASSUNTO = _(u'Versatum - Confirmar email')
+ASSUNTO = _(u'Versatum - Confirm your email')
 
 
 def register(request):
