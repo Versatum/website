@@ -16,9 +16,9 @@
               </div>
               <div class="panel-body">
                   <article>
-                      {{ project.description }}
+                      {{ project.description|safe }}
                       <h5> {% trans 'Info' %} </h5>
-                      {{ project.information }}
+                      {{ project.information|safe }}
                 </article>
               </div>
             </div>
