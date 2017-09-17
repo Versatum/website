@@ -116,3 +116,5 @@ ENV/
 
 media/
 versatum/versatum/local.py
+
+admin/
