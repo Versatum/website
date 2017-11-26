@@ -3,5 +3,27 @@
 
 
 {% block content %}
-
+    <section>
+        <figure>
+            <img src="{% static 'img/nations.jpg' %}">
+            <figcaption>
+            </figcaption>
+        </figure>
+        <article>
+            <h1> {% trans 'Versatum Organization' %} </h1>
+                <p>
+                    <br>
+{% blocktrans %}
+The whole idea of this project, starts at begin of 2017. We believe the digital transformation can change the life of needy people.
+We are dedicated to improving the life quality drove by the tecnology
+{% endblocktrans %}
+                </p>
+                <blockquote>
+{% blocktrans %}
+<p> Our mission is to promote free software and tecnology to empower the people. </p>
+<small> from  Eduardo S. Martins - Co-founder </small>
+{% endblocktrans %}
+                </blockquote>
+        </article>
+    </section>
 {% endblock %}

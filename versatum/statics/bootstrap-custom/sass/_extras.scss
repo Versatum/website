@@ -15,6 +15,14 @@ body
     margin: 5rem  0;
 }
 
+.clear-a{
+    color:  inherit;
+
+    &:hover{
+        color: inherit;
+        text-decoration: none;
+    }
+}
 
 $color: #cacaca;
 
@@ -53,7 +61,7 @@ $pink:  #C70039;
 }
 
 .success {
-    background-color:  #008000;
+    background-color:  MediumSeaGreen;
 }
 
 .warning {

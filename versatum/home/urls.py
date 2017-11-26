@@ -18,7 +18,7 @@ from django.conf.urls import url
 
 urlpatterns = [
     url(r'^$', home.homepage, name="homepage"),
-    url(r'^about/$', home.about, name="about"),
-    url(r'^contacts/$', home.contacts, name="contacts"),
     url(r'^help/$', home.help, name="help"),
+    url(r'^about/$', home.about, name="about"),
+    url(r'^community/$', home.community, name="community"),
 ]

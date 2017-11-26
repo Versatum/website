@@ -11,8 +11,8 @@ def about(request):
     return render(request, "home_about.html")
 
 
-def contacts(request):
-    return render(request, "home_contacts.html")
+def community(request):
+    return render(request, "home_community.html")
 
 
 def help(request):

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   height="500"
+   viewBox="0 0 500 500"
+   width="500"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo-mini.svg"
+   inkscape:export-filename="/home/eduardo/Documentos/Projetos/versatum/versatum.git/versatum/statics/img/favicons/apple-icon.png"
+   inkscape:export-xdpi="34.560001"
+   inkscape:export-ydpi="34.560001">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="0.63636364"
+     inkscape:cx="293.9085"
+     inkscape:cy="126.1551"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <circle
+     style="opacity:0.98999999;fill:#f9f9f9;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="path4144"
+     cx="250"
+     cy="250"
+     r="250" />
+  <g
+     id="g4323"
+     transform="translate(9.8905774,15.040012)">
+    <g
+       id="g4311"
+       transform="translate(0,0.049988)">
+      <path
+         id="path4181"
+         d="m 269.18,101.75 c 51.653,89.466 74.239,50.347 -29.068,50.347 -103.307,0 -80.721,39.119 -29.068,-50.347 51.653,-89.466 6.4821,-89.466 58.135,0 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000080" />
+      <path
+         id="path4183"
+         transform="scale(1,-1)"
+         d="m 269.18,-368.07 c 51.653,89.466 74.239,50.347 -29.068,50.347 -103.307,0 -80.721,39.119 -29.068,-50.347 51.653,-89.466 6.4821,-89.466 58.135,0 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ff0000" />
+    </g>
+    <g
+       id="g4195"
+       transform="matrix(0.62716,0,0,0.62716,24.219,78.168)">
+      <path
+         id="path4185"
+         transform="matrix(0,1,-1,0,780.44,-367.12)"
+         d="m 663.47,224.3 c 82.361,142.65 118.37,80.278 -46.348,80.278 -164.718,0 -128.71,62.376 -46.348,-80.278 82.361,-142.65 10.336,-142.65 92.697,0 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffff00" />
+      <path
+         id="path4187"
+         transform="matrix(0,1,1,0,292.42,-716.67)"
+         d="m 1013,-160.09 c 82.361,142.65 118.37,80.278 -46.348,80.278 -164.718,0 -128.71,62.376 -46.348,-80.278 82.361,-142.65 10.336,-142.65 92.697,0 z"
+         inkscape:connector-curvature="0"
+         style="fill:#008000" />
+    </g>
+  </g>
+</svg>

@@ -2,13 +2,13 @@
 {% load i18n static %}
 
 {% block title %}
-    Versatum - {% trans 'Contacts' %}
+    Versatum - {% trans 'Community' %}
 {% endblock %}
 
 {% block outdoor %}
-    <section class="jumbotron success">
+    <section class="jumbotron  success">
       <div class="container">
-        <h1 class="jumbotron-heading"> {% trans "Contacts" %}  </h1>
+        <h1 class="jumbotron-heading"> {% trans "Community" %}  </h1>
         <p class="normal">
             {% block page-description %}
                 {% blocktrans %} We are a non-profit organization with the goal of creating new technologies to solve human problems {% endblocktrans %}
@@ -22,7 +22,7 @@
 {% block content %}
 <ol class="breadcrumb">
     <li><a href="{% url 'home:homepage' %}"> Home </a></li>
-    <li class="active"> {% trans 'Contacts' %} </li>
+    <li class="active"> {% trans 'Community' %} </li>
 </ol>
 
 
