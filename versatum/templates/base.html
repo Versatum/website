@@ -98,7 +98,9 @@
                     <li  role="presentation" ><a href="{% url 'project:home' %}"> {% trans 'Projects' %} </a></li>
                     <li  role="presentation" ><a href="{% url 'home:about' %}"> {% trans 'About us' %} </a></li>
                     <li  role="presentation" ><a href="{% url 'home:help' %}"> {% trans 'Support us' %} </a></li>
+                    <!--
                     <li  role="presentation" ><a href="{% url 'home:community' %}"> {% trans 'Community' %} </a></li>
+                    -->
                 </ul>
             </div>
             <div class="col-sm-12 col-md-9 col-lg-10 ">
@@ -117,9 +119,9 @@
                 <h4> {% trans 'Support us' %} </h4>
                 <ul class="simple">
                     <li><a href="{% url 'home:help' %}#helpout"> <i class="fa fa-link"> </i> {% trans 'Help out' %} </a></li>
-                    <li><a href="{% url 'home:help' %}#donations"> <i class="fa fa-link"> </i> {% trans 'Donations' %} </a></li>
+                    <!--<li><a href="{% url 'home:help' %}#donations"> <i class="fa fa-link"> </i> {% trans 'Donations' %} </a></li>
                     <li><a href="{% url 'home:help' %}#dev"> <i class="fa fa-link"> </i> {% trans 'Development' %} </a></li>
-                    <li><a href="{% url 'home:help' %}#disclose"> <i class="fa fa-link"> </i> {% trans 'Disclose our page' %} </a></li>
+                    <li><a href="{% url 'home:help' %}#disclose"> <i class="fa fa-link"> </i> {% trans 'Promote us' %} </a></li>-->
                 </ul>
                 <h4> {% trans 'Contact us' %} </h4>
                 <ul class="simple">
@@ -135,10 +137,8 @@
             <div class="col-sm-12 col-md-6">
                 <h4> {% trans 'Sociais Networks' %} </h4>
                 <ul class="simple">
-                    <li><a href="#"> <i class="fa fa-facebook-square"> </i> Facebook </a></li>
-                    <li><a href="#"> <i class="fa fa-twitter-square"> </i> Twitter </a></li>
-                    <li><a href="#"> <i class="fa fa-youtube-square"> </i> Youtube </a></li>
-                    <li><a href="{{ github }}"> <i class="fa fa-github"> </i> Github </a></li>
+                    <li><a href="https://www.facebook.com/versatum/"> <i class="fa fa-facebook-square"> </i> Facebook </a></li>
+                    <li><a href="https://github.com/Versatum"> <i class="fa fa-github"> </i> Github </a></li>
                 </ul>
                 <h4> {% trans 'Languages' %} </h4>
                 <ul class="simple">
