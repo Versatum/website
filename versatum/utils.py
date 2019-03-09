@@ -5,6 +5,7 @@ import os
 
 from django import forms
 from django.conf import settings
+from django.shortcuts import render
 from django.forms.utils import ErrorList
 from django.core.mail import EmailMessage
 from django.utils.safestring import mark_safe
@@ -12,7 +13,6 @@ from django.utils.html import conditional_escape
 from django.template.loader import get_template
 from django.utils.crypto import get_random_string
 from django.utils.translation import ugettext_lazy as _
-from django.shortcuts import RequestContext, render_to_response
 
 
 
@@ -81,11 +81,12 @@ class HandleError(object):
             self.dados['mensagem'] = mensagem
 
     def __call__(self, request):
-        return render_to_response(
+        return render(
+            request=request,
             template_name=self.template,
             status=self.status_code,
-            dictionary=self.dados,
-            context_instance=RequestContext(request))
+            context=self.dados)
+            #context_instance=render(request))
 
 
 class ErrorListCSS(ErrorList):

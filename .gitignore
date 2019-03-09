@@ -111,6 +111,7 @@ ENV/
 # Sqlite
 
 *.sqlite3
+*.sqlite
 
 # media files
 
